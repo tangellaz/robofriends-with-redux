@@ -5,6 +5,7 @@ const CardList = ({robots}) => {
 	// if (true) {
 	// 	throw new Error('NOOOO!');
 	// }
+	console.log('CardList')
 	return (
 		<div>
 			{

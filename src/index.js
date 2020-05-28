@@ -15,11 +15,12 @@ const rootReducer = combineReducers({ searchRobots, requestRobots})
 const store = 
 	createStore(
 		rootReducer,
-		applyMiddleware(thunkMiddleware, logger)
+		applyMiddleware(thunkMiddleware)
 	)
 
 ReactDOM.render( 
 	<Provider store={store}>
 		<App />
 	</Provider>, document.getElementById('root'));
-serviceWorker.unregister();
+
+serviceWorker.register();
